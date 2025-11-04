@@ -4,13 +4,19 @@ import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+<<<<<<< HEAD
 import { useCart } from "../context/CartContext";
 
+=======
+>>>>>>> fea1d54f4cfc0bcd278831b40495d5dc42e190b8
 
 export default function Header() {
   const [hidden, setHidden] = useState(true);
   const location = useLocation();
+<<<<<<< HEAD
   const { cartCount } = useCart();
+=======
+>>>>>>> fea1d54f4cfc0bcd278831b40495d5dc42e190b8
 
   useEffect(() => {
     setHidden(true);
@@ -42,13 +48,18 @@ export default function Header() {
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
               type="button"
+<<<<<<< HEAD
               className="relative text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+=======
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+>>>>>>> fea1d54f4cfc0bcd278831b40495d5dc42e190b8
             >
               <Link to="/shoopingpage">
               <img
               src="https://cdn.logojoy.com/app/editor/ic_cart.svg"
               className="h-5"
               alt="Cart_Logo"
+<<<<<<< HEAD
             /> 
             </Link>
              {cartCount > 0 && (
@@ -56,6 +67,9 @@ export default function Header() {
         {cartCount}
       </span>
     )}
+=======
+            /> </Link>
+>>>>>>> fea1d54f4cfc0bcd278831b40495d5dc42e190b8
             </button>
             <button
               data-collapse-toggle="navbar-cta"
@@ -118,7 +132,11 @@ export default function Header() {
                     isActive ? activeClass : inActiveClass
                   }
                 >
+<<<<<<< HEAD
                   Cart
+=======
+                  About
+>>>>>>> fea1d54f4cfc0bcd278831b40495d5dc42e190b8
                 </NavLink>
               </li>
 
