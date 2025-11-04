@@ -51,18 +51,11 @@ export const CartProvider = ({ children }) => {
         cartList: state.cartList,
         addToCart,
         removeFromCart,
-<<<<<<< HEAD
         updateTotal,
         cartCount: state.cartList.length,
     };
 
-    
 
-=======
-        updateTotal
-    };
-
->>>>>>> fea1d54f4cfc0bcd278831b40495d5dc42e190b8
     return (
         <CartContext.Provider value={value}>
             {children}
